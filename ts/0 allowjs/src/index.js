@@ -3,6 +3,7 @@ export const log = () => {
 }
 
 let bar = 123;
-
+// @ts-ignore
 external(bar);
+// @ts-ignore
 bar.trim();
