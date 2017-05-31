@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "es5",
     "outDir": "lib",
-    "allowJs": true
+    "allowJs": true,
+    "checkJs": true
   },
   "include": [
     "src"
