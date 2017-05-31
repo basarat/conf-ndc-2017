@@ -1,1 +1,3 @@
 .alm
+demo-shipping/ts/*.js
+demo-allowjs/lib/*.js
