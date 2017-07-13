@@ -28,7 +28,7 @@ async function doWork() {
 
 doWork();
 ```
-Useges: 
+Usages: 
 * Callback hell
 * Browser testing 
 * Thinks like mocha and jest support async tests out of the box.
