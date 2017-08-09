@@ -1,4 +1,4 @@
-let bool : true | false;
+let bool: true | false;
 
 bool = true; // Okay
 bool = false; // Okay
