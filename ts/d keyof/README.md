@@ -7,7 +7,7 @@
 # 2 
 Lookup a prop is a common one.
 
-```
+```js
 const foo = {
   bar: 123,
   baz: 456
