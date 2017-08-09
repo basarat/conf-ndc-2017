@@ -53,6 +53,6 @@ export type SubmitRequest = {
     additionalInformation: string,
   },
   payment: {
-    payhiveCardToken: string,
+    cardToken: string,
   }
 };

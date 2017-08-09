@@ -7,7 +7,7 @@ Quite commonly you have giant objects e.g. JSON endpoint payloads can become qui
 ```js
 const submit: SubmitRequest = {
   payment: {
-    payhiveCardToken: ''
+    cardToken: ''
   },
 }
 ```
@@ -17,11 +17,11 @@ Traditionally you would just swap these out into their own types.
 
 ```js
 type Payment = {
-    payhiveCardToken: string,
+    cardToken: string,
 }
 
 const payment: Payment = {
-  payhiveCardToken: ''
+  cardToken: ''
 }
 ```
 * But then you have all these types lying around, which is just noise.
@@ -31,6 +31,6 @@ const payment: Payment = {
 With TypeScript latest you can lookup a type by string literals e.g.
 ```js
 const payment: SubmitRequest['payment'] = {
-  payhiveCardToken: ''
+  cardToken: ''
 };
 ```
