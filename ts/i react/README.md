@@ -16,5 +16,11 @@ this.forceUpdate();
 this.setState({ count: this.state.count + 1 });
 ```
 
-# NEXT
-Segue into children type checking for React.
+# 2
+There is tons of good stuff coming out for react beyond this as well e.g. children are now type checked. Use children which are functions, is common in a few react animation libraries e.g. react motion. 
+
+* Here I have a simple component that expects the children to be a function. 
+
+* Try to create this with something that is not a function is now an error.
+
+
