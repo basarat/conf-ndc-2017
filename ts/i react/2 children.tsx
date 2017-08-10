@@ -7,4 +7,3 @@ class Animate extends React.Component<{
     return <div>{this.props.children()}</div>
   }
 }
-

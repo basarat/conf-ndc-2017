@@ -22,5 +22,15 @@ There is tons of good stuff coming out for react beyond this as well e.g. childr
 * Here I have a simple component that expects the children to be a function. 
 
 * Try to create this with something that is not a function is now an error.
+```js
+<Animate>Hello</Animate>
+```
+But you add children as a proper function and it works fine :)
+
+```js
+<Animate>{
+  () => <div>Hello</div>
+}</Animate>
+```
 
 
