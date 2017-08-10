@@ -11,7 +11,7 @@ class Simple extends React.Component<{}, { count: number }>{
   render() {
     return <button
       onClick={() => {
-        
+        this.setState({ count: this.state.count + 1 });
       }}>
       Clicked count: {this.state.count}
     </button>
