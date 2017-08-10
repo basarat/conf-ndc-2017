@@ -7,13 +7,12 @@ const bar = foo.bar;
 foo.bar = 456; // Error 
 ```
 # 2
-TODO:
+Explicit annotation `readonly`. You can modify in the constructor.
 
-Explicit annotation `readonly` 
-# 3 
-More siginficantly you can even use it when mapping types. 
-React Type definitions do this for you automatically using the built in `Readonly<T>` for state. 
-# 4 
-Plenty of improvments in React's handling. E.g. this `Readonly` fact is just something that someone did without beating a drum about it and we all got it for free.
+```js
+const foo = new Foo();
+const bar = foo.bar;
+foo.bar = 456; // Error 
+```
 
-Segue into children type checking for React.
+A lot of these things will come in handy allowing you to do *type driven refactoring*. You find a piece of code, and you put annotations on it to understand it better and check your assumptions.
