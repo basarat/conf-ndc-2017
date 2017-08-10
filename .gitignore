@@ -1,4 +1,6 @@
 .alm
+node_modules
+
 ~$slides.pptx
 demo-shipping/ts/*.js
 ts/0 allowjs/lib/*.js
