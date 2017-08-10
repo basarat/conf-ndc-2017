@@ -1,4 +1,4 @@
-# 3 
+# 1
 More significantly you can even use it when mapping types. 
 React Type definitions do this for you automatically using the built in `Readonly<T>` for state. 
 # 4 
