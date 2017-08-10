@@ -3,4 +3,15 @@
 * You can use an object as a dictionary quite easily using an index signature. 
 
 # 2
-The `in` operator within an indexer allows us to specify the index. 
+* The `in` operator within an indexer lets you iterate a union of types. Its like a list comprehension in python, but for Types. 
+
+```js
+const foo: MemberKeyed = {
+  // Show auto complete  
+}
+``` 
+
+* These are called mapped types because we just created a new type by mapping over an existing type.
+
+# 3
+Example use cases are fairly diverse and really up to your imagination, but one good one is creating something like a string enum.
