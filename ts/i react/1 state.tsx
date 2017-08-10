@@ -9,7 +9,12 @@ class Simple extends React.Component<{}, { count: number }>{
   }
 
   render() {
-    return <button>Clicked count: {this.state.count}</button>
+    return <button
+      onClick={() => {
+        
+      }}>
+      Clicked count: {this.state.count}
+    </button>
   }
 }
 
