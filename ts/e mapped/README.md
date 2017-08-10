@@ -14,4 +14,16 @@ const foo: MemberKeyed = {
 * These are called mapped types because we just created a new type by mapping over an existing type.
 
 # 3
-Example use cases are fairly diverse and really up to your imagination, but one good one is creating something like a string enum.
+* These can be used with Generics, Example use cases are fairly diverse and really up to your imagination, but one good one is creating something like a string enum.
+
+```js
+const Direction = strEnum([
+  'North',
+  'South',
+  'East',
+  'West'
+]);
+
+console.log(Direction.North)
+console.log(Direction.South)
+```
