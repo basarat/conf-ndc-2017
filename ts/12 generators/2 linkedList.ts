@@ -43,6 +43,13 @@ export class LinkedList<T> {
       return value;
     }
   }
+  *values() {
+    let current = this.head;
+    while (current) {
+      yield current.value;
+      current = current.next;
+    }
+  }
 }
 
 const list = new LinkedList<number>();
@@ -50,3 +57,5 @@ list.add(1);
 list.add(2);
 list.add(3);
 list.add(4);
+
+console.log(Array.from(list.values()))

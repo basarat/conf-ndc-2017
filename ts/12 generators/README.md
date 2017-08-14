@@ -29,3 +29,12 @@ Makes certian pattern super easy to write e.g. a linked list
     }
   }
 ```
+
+```js
+for (const item of list.values()) {
+  console.log(item);
+}
+
+// OR 
+console.log(Array.from(list.values()))
+```
