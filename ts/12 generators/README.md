@@ -17,3 +17,15 @@ for (const item of whole()) {
 ```
 
 #2
+
+Makes certian pattern super easy to write e.g. a linked list
+
+```js
+  *values() {
+    let current = this.head;
+    while (current) {
+      yield current.value;
+      current = current.next;
+    }
+  }
+```
