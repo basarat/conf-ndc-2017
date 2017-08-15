@@ -14,8 +14,31 @@ function doWork() {
 doWork();
 ```
 vs. 
+
 ```js
-const delay = (ms) => new Promise<void>(res => setTimeout(res, ms))
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+
+function doWork() {
+  delay(1000)
+    .then(() => {
+      console.log('1s')
+    })
+    .then(() => delay(1000))
+    .then(() => {
+      console.log('2s')
+    })
+    .then(() => delay(1000))
+    .then(() => {
+      console.log('2s')
+    })
+}
+
+doWork();
+```
+
+vs.
+```js
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
 async function doWork() {
   await delay(1000);
@@ -23,7 +46,7 @@ async function doWork() {
   await delay(1000);
   console.log('2s');
   await delay(1000);
-  console.log('3s');
+  console.log('2s');
 }
 
 doWork();
