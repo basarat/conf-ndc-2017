@@ -2,6 +2,6 @@ const log = () => {
   console.log('hello world')
 }
 
-let bar = 123;
-external(bar);
-bar.trim();
+let foo = { bar: 123 };
+external(foo);
+foo.bar.trim();
