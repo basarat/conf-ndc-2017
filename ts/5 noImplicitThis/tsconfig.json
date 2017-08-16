@@ -1,6 +1,6 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    
+    "noImplicitThis": true    
   }
 }
