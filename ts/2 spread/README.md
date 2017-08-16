@@ -1,3 +1,4 @@
+* You have a few objects with some data inside.
 ```js
 const foo = {
   a: 123,
