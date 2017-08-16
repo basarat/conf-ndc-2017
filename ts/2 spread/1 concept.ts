@@ -7,6 +7,3 @@ const bar = {
   c: 789
 }
 
-const baz = { ...foo, ...bar }
-
-const { a, ...qux } = baz;

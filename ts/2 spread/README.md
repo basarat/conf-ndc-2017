@@ -8,11 +8,13 @@ const foo = {
 const bar = {
   c: 789
 }
-
-const baz = { ...foo, ...bar }
-
-const { a, ...qux } = baz;
 ```
 * A simple extend
+```js
+const baz = { ...foo, ...bar }
+```
 * A simple subtraction when you are composing function.
 You can easily remove data when composing higher order functions.
+```js
+const { a, ...qux } = baz;
+```
