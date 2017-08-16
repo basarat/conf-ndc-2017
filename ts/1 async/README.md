@@ -55,3 +55,15 @@ Usages:
 * Callback hell
 * Browser testing 
 * Thinks like mocha and jest support async tests out of the box.
+
+Trivia. Say you have a function that returns a promise. perhaps its a network call and when it fails you want to look at the result.
+```js
+declare var foo: () => Promise<number>;
+function bar() {
+  return foo()
+    .catch(e => {
+      console.log(e);
+    })
+}
+```
+What is the return type of `bar`? Proper way is to rethrow if you must.
