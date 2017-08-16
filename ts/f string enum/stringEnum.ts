@@ -4,4 +4,3 @@ enum Direction {
   East = 'East',
   West = 'West',
 }
-
