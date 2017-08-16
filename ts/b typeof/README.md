@@ -28,3 +28,5 @@ const personB: Person = {
   lastName: "Boo",
 }
 ```
+
+* And if you have a typo or miss a property you get a nice error.
