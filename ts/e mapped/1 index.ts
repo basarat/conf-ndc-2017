@@ -3,5 +3,3 @@ interface NameMap {
 }
 
 const foo: NameMap = Object.create(null);
-foo["hello"] = "world";
-const bar = foo["hello"]; // bar: string;
