@@ -1,6 +1,12 @@
 # 1
 
 * You can get the name of the keys of a type as a union using `keyof`
+
+```js
+type PersonKeys = keyof Person;
+```
+
+
 * Why would this be useful. This is great when combined with Generics. 
 * A lot of stuff common in functional programming cannot be modeled without this.
 
