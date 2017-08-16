@@ -13,3 +13,4 @@ let str: "hello";
 str = "hello"; // Okay
 str = "world"; // Error
 ```
+There use case really shines when you use then in a union.
