@@ -11,14 +11,9 @@ type PersonKeys = keyof Person;
 * A lot of stuff common in functional programming cannot be modeled without this.
 
 # 2 
-Lookup a prop is a common one.
-
+* Lookup a prop is a common one.
+* Since the generics are in the argument position, they can actually be inferred. From the first argument, it knows that 'K' must be in the set of keys that make up `T`.
 ```js
-const foo = {
-  bar: 123,
-  baz: 456
-};
-
-const bar = prop(foo, 'bar'); // Okay
+const bar = prop({bar: 123,baz: 456}, 'bar'); // Okay
 const baz = prop(foo, 'invalid'); // Error
 ```
