@@ -1,5 +1,5 @@
 ```js
-  if (s.kind === "square") {
+  if (s.kind === 'square') {
     // Now TypeScript *knows* that `s` must a square ;)
     // So you can use its members safely :)
     return s.size * s.size;
@@ -13,7 +13,7 @@
 
 # Exhaustive checks
 ```js
-  else if (s.kind === "rectangle") {
+  else if (s.kind === 'rectangle') {
     return s.width * s.height;
   }
   else {
@@ -25,17 +25,17 @@
 
 ```js
 interface Circle {
-  kind: "circle";
+  kind: 'circle';
   radius: number;
 }
 type Shape = Square | Rectangle | Circle;
 ```
 
 ```js
-  else if (s.kind === "rectangle") {
+  else if (s.kind === 'rectangle') {
     return s.width * s.height;
   }
-  else if (s.kind === "circle") {
+  else if (s.kind === 'circle') {
     return Math.PI * s.radius * s.radius;
   }
   else {
