@@ -1,9 +1,9 @@
 interface Square {
-  kind: "square";
+  kind: 'square';
   size: number;
 }
 interface Rectangle {
-  kind: "rectangle";
+  kind: 'rectangle';
   width: number;
   height: number;
 }
