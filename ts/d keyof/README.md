@@ -15,5 +15,5 @@ type PersonKeys = keyof Person;
 * Since the generics are in the argument position, they can actually be inferred. From the first argument, it knows that 'K' must be in the set of keys that make up `T`.
 ```js
 const bar = prop({bar: 123,baz: 456}, 'bar'); // Okay
-const baz = prop(foo, 'invalid'); // Error
+const baz = prop({bar: 123,baz: 456}, 'invalid'); // Error
 ```
