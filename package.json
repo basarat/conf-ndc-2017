@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/basarat/conf-ndc-2017#readme",
   "devDependencies": {
-    "@types/react": "16.0.2",
-    "@types/react-dom": "15.5.2",
-    "react": "15.6.1",
-    "react-dom": "15.6.1"
+    "@types/react": "16.8.23",
+    "@types/react-dom": "16.8.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
   }
 }
